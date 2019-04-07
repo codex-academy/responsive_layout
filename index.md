@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-# Responsive webpages</h1>
+# Responsive webpages
 
 Responsive web pages respond to the available screen size and move the web page elements around to ensure a good user experience.
 
@@ -42,7 +41,7 @@ When using floats it is important to created containing elements and the clear t
 }
 
 .clearfix {
-	
+
 }
 
 ```
