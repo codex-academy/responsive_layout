@@ -1,0 +1,73 @@
+
+body {
+	background-color:lightcoral;
+	font-family: arial;
+}
+
+.heading {
+	margin: 1em;
+}
+
+.info {
+	border: 0.1em solid;
+	font-size: 1em;
+	padding: 1em;
+	width: 10em;
+	background-color: azure;
+}
+
+.show-1000 {
+	display: none;
+}
+.show {
+	display: block;
+}
+.show-600 {
+	display: none;
+}
+
+@media screen and (min-width : 600px) {
+	body {
+		background-color: dodgerblue;
+		color: powderblue;
+	}
+
+	.speech {
+		padding: 1em;
+	}
+
+	.show-1000 {
+		display: none;
+	}
+	.show {
+		display: none;
+	}
+	.show-600 {
+		display: block;
+	}
+}
+
+@media screen and (min-width : 1000px) {
+	body {
+		background-color:powderblue;
+		color: black;
+
+	}
+
+	.speech {
+		padding: 2em;
+		margin: 1em;
+		border: 0.25em solid #aaa;
+		border-radius: 0.5em;
+	}
+
+	.show-1000 {
+		display: block;
+	}
+	.show {
+		display: none;
+	}
+	.show-600 {
+		display: none;
+	}
+}

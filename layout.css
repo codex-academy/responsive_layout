@@ -1,0 +1,42 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.speech {
+	padding: 1em;
+}
+
+.top .end {
+	padding: 1em;
+}
+
+
+
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
+
+.speech > img {
+	margin: 0.5em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+@media screen and (min-width:800px) {
+
+	.speech {
+		width: 30%;
+		float: left;
+	}
+
+	
+
+	
+
+}
