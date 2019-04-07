@@ -31,28 +31,69 @@ There are various different ways to get elements in an HTML page to move from th
 
 Floats are one of the oldest and most trusted ways to layout web pages with. But it is also quite quirky. And one can easily create a mess using floats if you are not carefull.
 
-When using floats it is important to created containing elements and the clear the float using a clearfix to prevent elemts below the floated elements to be pulled up as well.
+When using floats it is important to create a containing element and to clear the float using a clearfix on the containing element to prevent elements below the floated elements to be pulled up as well.
 
 ```css
-
 .box {
 	width: 25%;
 	float: left;
 }
 
 .clearfix {
-
+  overflow: auto;
+  zoom: 1;
 }
-
 ```
+
+```html
+<div class="boxes clearfix">
+	<div class="box">
+		this will float left and be next to a box
+	</div>
+	<div class="box">
+		this will float left and be next to a box
+	</div>
+	<div class="box">
+		this will float left and be next to a box
+	</div>
+</div>
+<div class="under">
+	This element will pull up if the boxed element don't clear the float using a clearfix.
+</div>
+```
+
+
 
 ### Flexbox
 
 Flexbox is a newer way to create web page layouts. It's an easy way to split a page up into equal parts on an horizontal axis.
 
+You can see from the examples below that using flexbox standard settings for horizontal layouts use less css than floats.
+
 ```css
 .boxes {
 	display: flex
 }
+
+.wider {
+	flex : 2
+}
+```
+
+```html
+<div class="boxes">
+	<div class="box">
+		this will be next to a box and not below
+	</div>
+	<div class="box wider">
+		this will be next to a box and not below. but twice wider than the other to box elements.
+	</div>
+	<div class="box">
+		this will be next to a box and not below
+	</div>
+</div>
+<div class="under">
+	This element will pull up if the boxed element don't clear the float using a clearfix.
+</div>
 ```
 
